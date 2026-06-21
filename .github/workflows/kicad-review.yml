@@ -1,0 +1,28 @@
+# .github/workflows/kicad-review.yml
+name: KiCad Design Review
+on:
+  push:
+    paths: ['**/*.kicad_sch', '**/*.kicad_pcb']
+  pull_request:
+    paths: ['**/*.kicad_sch', '**/*.kicad_pcb']
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install System Dependencies
+        run: sudo apt-get update && sudo apt-get install -y ngspice poppler-utils
+      - name: KiCad Design Review
+        uses: aklofas/kicad-happy@v1
+        id: analysis
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v3
+        if: github.event_name == 'pull_request'
+        with:
+          file-path: ${{ steps.analysis.outputs.report-path }}
+          comment-tag: kicad-happy-review
+          mode: upsert
