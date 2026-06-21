@@ -17,7 +17,7 @@ jobs:
       - name: Install System Dependencies
         run: sudo apt-get update && sudo apt-get install -y ngspice poppler-utils
       - name: KiCad Design Review
-        uses: aklofas/kicad-happy@v1
+        uses: ./kicad-happy
         id: analysis
         with:
           schematic: 'Atlas.kicad_sch'

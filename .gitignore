@@ -40,7 +40,7 @@ fp-info-cache
 _restore_backup_*/
 
 # Static analysis tool and reports
-kicad-happy/
+# kicad-happy/
 analysis/
 
 # Local agent skills and config
