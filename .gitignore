@@ -45,3 +45,5 @@ analysis/
 
 # Local agent skills and config
 .gemini/
+datasheets/
+
