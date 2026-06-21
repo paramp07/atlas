@@ -416,7 +416,7 @@
         "uuid": "75ebfd74-7378-4f87-a9f4-4a71b75889ff"
       }
     ],
-    "used_designators": "#PWR208,#PWR211,#PWR214,#PWR308,#PWR311,#PWR314,#PWR408,#PWR411,#PWR414,#PWR508,#PWR511,#PWR514",
+    "used_designators": "L402,D401-404,D408-409,D416-418,#PWR123,#PWR126,#PWR128,#PWR415-417,#PWR427-446,C409-410,C415-424,R406-419,R444-458,J103-104,J404-406,Q401-406,TP403-404,U402,U404",
     "variants": []
   },
   "sheets": [
@@ -425,7 +425,7 @@
       "Atlas"
     ],
     [
-      "997d72d0-e4f8-4f18-833d-1bd0a07de981",
+      "348403b9-c2a7-4f19-b4cb-22362ec3479a",
       "Motor_1"
     ],
     [
