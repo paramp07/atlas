@@ -1520,7 +1520,7 @@
 					)
 				)
 			)
-			(property "Description" "符合AEC-Q100标准且具有皮安级IB and 使能引脚的40V、双向、高精度电流感测放大器, SOT-23-5 "
+			(property "Description" "符合AEC-Q100标准且具有皮安级IB and 使能引脚的40V、双向、高精度电流感测放大器, SOT-23-5  "
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8478,7 +8478,7 @@
 				)
 			)
 		)
-		(property "Description" "符合AEC-Q100标准且具有皮安级IB and 使能引脚的40V、双向、高精度电流感测放大器, SOT-23-5 "
+		(property "Description" "符合AEC-Q100标准且具有皮安级IB and 使能引脚的40V、双向、高精度电流感测放大器, SOT-23-5  "
 			(at 176.53 50.8 0)
 			(hide yes)
 			(show_name no)

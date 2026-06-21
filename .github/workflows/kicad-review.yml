@@ -19,6 +19,9 @@ jobs:
       - name: KiCad Design Review
         uses: aklofas/kicad-happy@v1
         id: analysis
+        with:
+          schematic: 'Atlas.kicad_sch'
+          pcb: 'Atlas.kicad_pcb'
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v3
         if: github.event_name == 'pull_request'
