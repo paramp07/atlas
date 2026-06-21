@@ -5754,7 +5754,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "HOLR2725D-4W-0.2MR-1%"
 			(at 167.64 -60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7593,6 +7593,14 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "lcsc" "C19077514" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10528,6 +10536,14 @@
 				)
 			)
 		)
+		(property "lcsc" "C19077514" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ceb38131-04c0-4ae5-96de-7d4844e31fa6")
 		)
@@ -11353,7 +11369,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/2304141430_JST-SM08B-SRSS-TB-LF-SN_C160401.pdf"
 			(at 161.29 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11373,6 +11389,30 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "lcsc" "C160401" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SM08B-SRSS-TB(LF)(SN)" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "8"
