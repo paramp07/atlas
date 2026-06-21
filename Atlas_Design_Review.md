@@ -1,8 +1,8 @@
 # Atlas ESC Design Review
 
 **Project:** Atlas Multi-Channel ESC (KiCad 10.0, 5 hierarchical sheets: 1 root + 4 instanced Motor sheets, no PCB layout started yet)  
-**Date:** June 20, 2026  
-**Analyzers:** [analyze_schematic.py](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/.agents/skills/kicad/scripts/analyze_schematic.py), [cross_analysis.py](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/.agents/skills/kicad/scripts/cross_analysis.py), [analyze_emc.py](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/.agents/skills/emc/scripts/analyze_emc.py), [analyze_thermal.py](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/.agents/skills/kicad/scripts/analyze_thermal.py) (all run in modern format, full analysis cache)
+**Date:** June 21, 2026  
+**Analyzers:** [analyze_schematic.py](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/.agents/skills/kicad/scripts/analyze_schematic.py), [cross_analysis.py](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/.agents/skills/cross_analysis.py), [analyze_emc.py](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/.agents/skills/emc/scripts/analyze_emc.py), [analyze_thermal.py](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/.agents/skills/kicad/scripts/analyze_thermal.py) (all run in modern format, full analysis cache)
 
 ---
 
@@ -10,7 +10,17 @@
 
 The Atlas ESC is a multi-channel brushless DC (BLDC) motor speed controller consisting of 4 identical motor controller channels. Each channel is defined in a hierarchical sheet instance of [VegaESC.kicad_sch](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/VegaESC.kicad_sch) (instanced as Motor_1, Motor_2, Motor_3, and Motor_4). 
 
-Each motor channel is controlled by an Artery [AT32F421K8T7](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/AT32F421K8T7.pdf) MCU driving an [HXFD6288QFN24](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/HXFD6288QFN24.pdf) 3-phase gate driver. The power architecture is cascaded, starting with a 10V buck regulator ([LMR51420YDDCR](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/LMR51420YDDCR.pdf)) that feeds a 3.3V LDO regulator ([TLV76733DRVR](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/TLV76733DRVR.pdf)) for the digital logic and a high-precision bidirectional current sense amplifier ([INA186A2QDBVRQ1](https://www.lcsc.com/datasheet/lcsc_datasheet_2302220000_Texas-Instruments-INA186A2QDBVRQ1_C2867989.pdf)).
+Each motor channel is controlled by an Artery [AT32F421K8T7](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/AT32F421K8T7.pdf) MCU driving an [HXFD6288QFN24](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/HXFD6288QFN24.pdf) 3-phase gate driver. The power architecture is cascaded, starting with a 10V buck regulator ([LMR51420YDDCR](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/LMR51420YDDCR.pdf)) that feeds a 3.3V LDO regulator ([TLV76733DRVR](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/TLV76733DRVR.pdf)) for the digital logic and a high-precision bidirectional current sense amplifier ([INA186A2](https://www.lcsc.com/datasheet/lcsc_datasheet_2302220000_Texas-Instruments-INA186A2QDBVRQ1_C2867989.pdf)).
+
+---
+
+## Recent Design Updates (June 21, 2026)
+
+The following schematic design modifications were made in the recent update:
+1. **Control Interface Consolidation**: The 5-pin programming/ADC connector `J106` and individual phase diagnostic posts `J103` (Phase A) and `J105` (Phase C) on the root sheet were replaced by a single unified 8-pin JST SH connector `J104`. This connector groups the power rail (`+BATT`), digital ground (`GND`), analog telemetry (`CURRENT` and `TELEMETRY`), and the four PWM inputs (`M1`, `M2`, `M3`, `M4`) for external interfacing.
+2. **Current Sense MCU Disconnection**: The `CURRENT` telemetry line from the current-sense amplifier (`U101`) output filter was disconnected from the MCUs (`Pin 9, PA3`). Total board current telemetry is now routed exclusively to the external interface via `J104` Pin 3.
+3. **Reference Designator Reorganization**: Re-annotated reference designators across subsheets to prepare for PCB layout. For example, `Motor_1` references (which previously used the `2xx` series like `U201`, `U203`) now use `4xx` series (like `U402`, `U404`), mapping logically to layout grids.
+4. **General Schematic Cleanup**: Cleaned up wires, organized nets, and resolved dangling connections on the root sheet (removing stray test points `TP105` and `TP106`).
 
 ---
 
@@ -21,7 +31,7 @@ Each motor channel is controlled by an Artery [AT32F421K8T7](file:///C:/Users/pa
 | **WARNING** | `+BATT` and `VBAT` have no declared source (ERC warning `RS-001`) | [Power Analysis](#power-analysis) |
 | **WARNING** | Input voltage is limited to 24V due to TVS Diode `D101` (`SMF24A`) | [Voltage Derating](#voltage-derating) |
 | **INFO** | MCU control logic crossings (nets `AHIGH`, `ALOW`, etc.) are false positives | [False Positives / Reviewer Overrides](#false-positives--reviewer-overrides) |
-| **INFO** | PCB layout has not been started (293 missing components) | [Schematic ↔ PCB Cross-Reference](#schematic--pcb-cross-reference) |
+| **INFO** | PCB layout has not been started (290 missing components) | [Schematic ↔ PCB Cross-Reference](#schematic--pcb-cross-reference) |
 
 ---
 
@@ -31,16 +41,16 @@ Each motor channel is controlled by an Artery [AT32F421K8T7](file:///C:/Users/pa
 |----------------|----------|
 | Resistors      | 122      |
 | Capacitors     | 69       |
-| Diodes / LEDs  | 38       |
+| Diodes / LEDs  | 40       |
 | Transistors    | 24       |
 | ICs            | 11       |
 | Inductors / FBs| 5        |
 | Connectors     | 1        |
-| Test Points    | 31       |
+| Test Points    | 26       |
 | Mounting Holes | 4        |
-| **Total**      | **307**  |
+| **Total**      | **302**  |
 
-* **Nets:** 172 | **Wires:** 831 | **No-connects:** 48 | **Power rails:** 6
+* **Nets:** 177 | **Wires:** 848 | **No-connects:** 52 | **Power rails:** 6
 * **Sourcing Audit:** 29 of 31 unique parts have manufacturer part numbers (93.5% coverage). Generic post-connectors (e.g. BATT, GND, motor phases A/B/C) and programming headers lack MPNs, which is normal for layout post connections.
 
 ---
@@ -59,21 +69,21 @@ Each motor channel is controlled by an Artery [AT32F421K8T7](file:///C:/Users/pa
       +------+------------------------------+
       |                                     |
       v                                     v
-[ U102 Buck (LMR51420) ]             [ Q207-Q512 Power FETs ]
+[ U102 Buck (LMR51420) ]             [ Q307-Q512, Q401-Q406 Power FETs ]
       | (SW, FB, L101 15µH)
       v (+10V Net)
       |
       +------+------------------------------+
       |                                     |
       v                                     v
-[ U103 LDO (TLV76733) ]              [ U203-U503 FD6288Q VCC ]
+[ U103 LDO (TLV76733) ]              [ U303, U403, U404, U503 FD6288Q VCC ]
       |
       v (+3V3 Net)
       |
       +-------------------------------------+
       |                                     |
       v                                     v
-[ U201-U501 AT32F421 MCUs ]          [ U101 INA186 V+ ]
+[ U301, U401, U402, U501 MCUs ]      [ U101 INA186 V+ ]
 ```
 
 * **Buck regulator output voltage check:** $V_{OUT} = 0.6\text{ V} \times \left(1 + \frac{47\text{ k}\Omega}{3\text{ k}\Omega}\right) = 10.0\text{ V}$. Matches the `+10V` rail name exactly.
@@ -91,14 +101,14 @@ The active IC pins were cross-referenced against manufacturer datasheets:
 
 | Ref | Value | Pins | Datasheet Verified | Verification Status | Match |
 |---|---|---|---|---|---|
-| `U101` | INA186A2QDBVRQ1 | 5 | [INA186 Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2302220000_Texas-Instruments-INA186A2QDBVRQ1_C2867989.pdf) (TI, p. 5) | Verified (manual) | Yes |
-| `U102` | LMR51420YDDCR | 6 | [LMR51420YDDCR.pdf](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/LMR51420YDDCR.pdf) (TI, p. 4) | Verified (datasheet) | Yes |
-| `U103` | TLV76733DRVR | 6 | [TLV76733DRVR.pdf](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/TLV76733DRVR.pdf) (TI, p. 4) | Verified (datasheet) | Yes |
-| `U201,301,401,501` | AT32F421K8T7 | 32 | [AT32F421K8T7.pdf](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/AT32F421K8T7.pdf) (Artery, p. 11) | Verified (datasheet) | Yes |
-| `U203,303,403,503` | HXFD6288QFN24 | 24 | [HXFD6288QFN24.pdf](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/datasheets/HXFD6288QFN24.pdf) (HXDZ, p. 4) | Verified (datasheet) | Yes |
+| `U101` | INA186A2 | 5 | [INA186 Datasheet](https://www.lcsc.com/datasheet/lcsc_datasheet_2302220000_Texas-Instruments-INA186A2QDBVRQ1_C2867989.pdf) (TI, p. 5) | Verified (manual) | Yes |
+| `U102` | LMR51420YDDCR | 6 | [LMR51420YDDCR.pdf](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/LMR51420YDDCR.pdf) (TI, p. 4) | Verified (datasheet) | Yes |
+| `U103` | TLV76733DRVR | 6 | [TLV76733DRVR.pdf](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/TLV76733DRVR.pdf) (TI, p. 4) | Verified (datasheet) | Yes |
+| `U301,401,402,501` | AT32F421K8T7 | 32 | [AT32F421K8T7.pdf](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/AT32F421K8T7.pdf) (Artery, p. 11) | Verified (datasheet) | Yes |
+| `U303,403,404,503` | HXFD6288QFN24 | 24 | [HXFD6288QFN24.pdf](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/datasheets/HXFD6288QFN24.pdf) (HXDZ, p. 4) | Verified (datasheet) | Yes |
 
 ### Net Tracing
-* **Current Sensing Signal Net (`CURRENT`):** Connected to `U101` Pin 1 (OUT) through series resistor `R102` (to net `CURRENT`), with capacitor `C102` to GND. Traced to pin 9 (`PA3`) of all four channel MCUs (`U201`, `U301`, `U401`, `U501`) and external programming header `J106` pin 3. This enables all 4 MCUs to sample the board's total current in parallel.
+* **Current Sensing Signal Net (`CURRENT`):** Connected to `U101` Pin 1 (OUT) through series resistor `R102` (to net `CURRENT`), with capacitor `C102` to GND. Traced to external control interface connector `J104` Pin 3. *Note: In the recent design update, current sense connections to the channel MCUs (Pin 9, `PA3`) were removed, and the MCUs are now disconnected from this net. The total current measurement is now routed only to the external interface.*
 * **Gate Drive Logic Signals (Nets `AHIGH`, `ALOW`, etc.):** Checked connectivity between MCU PWM output pins and gate driver input pins:
   * `AHIGH`: MCU PA10 (pin 20) $\rightarrow$ FD6288Q HIN1 (pin 22) [All 4 channels]
   * `ALOW`: MCU PB1 (pin 15) $\rightarrow$ FD6288Q LIN1 (pin 1) [All 4 channels]
@@ -152,8 +162,8 @@ The active IC pins were cross-referenced against manufacturer datasheets:
 
 ## Schematic ↔ PCB Cross-Reference
 
-* **Component Count Mismatch:** Schematic contains 293 components (excluding power symbols), while the PCB contains 0.
-* **PCB State:** The [Atlas.kicad_pcb](file:///C:/Users/param/OneDrive/Documents/Code/pcb/project/atlas/Atlas.kicad_pcb) file is currently a blank layout (80 bytes).
+* **Component Count Mismatch:** Schematic contains 290 components (excluding power symbols), while the PCB contains 0.
+* **PCB State:** The [Atlas.kicad_pcb](file:///C:/Users/Param/Documents/KiCad/Projects/ESC/Atlas/Atlas/Atlas.kicad_pcb) file is currently a blank layout (80 bytes).
 * **Action Required:** The layout has not been started. The designer must run **Tools $\rightarrow$ Update PCB from Schematic** to import the component footprints and net connections into the layout before starting trace routing.
 
 ---
