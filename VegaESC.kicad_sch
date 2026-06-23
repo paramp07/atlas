@@ -4936,10 +4936,8 @@
 		)
 		(uuid "fe698c57-9ae3-4670-945c-96c40aa9aa3c")
 	)
-	(global_label "MOTORB"
-		(shape input)
+		(label "MOTORB"
 		(at 242.57 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4947,23 +4945,9 @@
 			(justify right)
 		)
 		(uuid "027a09f4-b1e9-4c59-839b-be8911597126")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.9648 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "GLA"
-		(shape input)
+		(label "GLA"
 		(at 52.07 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4971,23 +4955,9 @@
 			(justify right)
 		)
 		(uuid "0304f33d-da76-4797-8e0f-7a3cb5b4edad")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.6981 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORA"
-		(shape input)
+		(label "MOTORA"
 		(at 242.57 135.89 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4995,23 +4965,9 @@
 			(justify right)
 		)
 		(uuid "073faafe-339c-4b75-a2bf-2ef1084a011a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.1462 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORC"
-		(shape input)
+		(label "MOTORC"
 		(at 242.57 146.05 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5019,23 +4975,9 @@
 			(justify right)
 		)
 		(uuid "08a330dc-e551-41c4-9a57-eebcadaf4a02")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.9648 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "CLOW"
-		(shape input)
+		(label "CLOW"
 		(at 157.48 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5043,23 +4985,9 @@
 			(justify left)
 		)
 		(uuid "103db56d-5c09-4fd4-8b13-bef7062688f3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.5452 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "NRST"
-		(shape input)
+		(label "NRST"
 		(at 41.91 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5067,23 +4995,9 @@
 			(justify left)
 		)
 		(uuid "145e8633-8c79-4777-b397-c634c72edffd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.6728 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "CHIGH"
-		(shape input)
+		(label "CHIGH"
 		(at 82.55 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5091,23 +5005,9 @@
 			(justify left)
 		)
 		(uuid "172de66c-bbe7-41d7-a60a-138d1d3e32b6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.341 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GLA"
-		(shape input)
+		(label "GLA"
 		(at 157.48 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5115,23 +5015,9 @@
 			(justify left)
 		)
 		(uuid "22d27a95-c23c-414f-ad5d-6c71fe1a8356")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.8519 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GHA"
-		(shape input)
+		(label "GHA"
 		(at 52.07 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5139,23 +5025,9 @@
 			(justify right)
 		)
 		(uuid "2ff45454-c692-43f8-af4e-601d2b963ba9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.3957 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "GHB"
-		(shape input)
+		(label "GHB"
 		(at 130.81 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5163,23 +5035,9 @@
 			(justify right)
 		)
 		(uuid "443b43be-8390-4468-910a-4c391ff94c8b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.9543 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "CHIGH"
-		(shape input)
+		(label "CHIGH"
 		(at 130.81 49.53 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5187,23 +5045,9 @@
 			(justify right)
 		)
 		(uuid "4adfa385-4a3d-47bd-8df2-3b315e6f4ee1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.019 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BLOW"
-		(shape input)
+		(label "BLOW"
 		(at 157.48 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5211,23 +5055,9 @@
 			(justify left)
 		)
 		(uuid "4bac17f4-f879-4218-969f-b80eff56ca91")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.5452 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "MOTORA"
-		(shape input)
+		(label "MOTORA"
 		(at 82.55 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5235,23 +5065,9 @@
 			(justify left)
 		)
 		(uuid "4e33e088-bc54-44fd-ade0-43f901e40a3f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.9738 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "MOTORB"
-		(shape input)
+		(label "MOTORB"
 		(at 182.88 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5259,23 +5075,9 @@
 			(justify left)
 		)
 		(uuid "4ff3868c-d551-47cb-99aa-82447a9cfadb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.4852 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GHB"
-		(shape input)
+		(label "GHB"
 		(at 107.95 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5283,23 +5085,9 @@
 			(justify right)
 		)
 		(uuid "50acef64-b9d4-49e2-8ae3-172e8190c58d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.0943 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORA"
-		(shape input)
+		(label "MOTORA"
 		(at 274.32 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5307,23 +5095,9 @@
 			(justify left)
 		)
 		(uuid "59d978ec-d332-4824-845e-b9d266c35df2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.7438 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "MOTORA"
-		(shape input)
+		(label "MOTORA"
 		(at 182.88 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5331,23 +5105,9 @@
 			(justify left)
 		)
 		(uuid "5c1cee4d-7811-4814-9e97-2655859db33d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.3038 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "AHIGH"
-		(shape input)
+		(label "AHIGH"
 		(at 82.55 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5355,23 +5115,9 @@
 			(justify left)
 		)
 		(uuid "6028841f-57ad-4b31-ae78-264cfd112633")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.1596 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "BHIGH"
-		(shape input)
+		(label "BHIGH"
 		(at 82.55 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5379,23 +5125,9 @@
 			(justify left)
 		)
 		(uuid "694e31b3-e5c4-47bd-b6c5-d1bc6fd69bb6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.341 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "MOTORC"
-		(shape input)
+		(label "MOTORC"
 		(at 190.5 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5403,23 +5135,9 @@
 			(justify left)
 		)
 		(uuid "785dde8b-b41a-44f8-8238-4eae3a9e6a18")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.1052 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "BEMF_COMMON"
-		(shape input)
+		(label "BEMF_COMMON"
 		(at 82.55 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5427,23 +5145,9 @@
 			(justify left)
 		)
 		(uuid "79e60655-5d8e-4b1c-bcf3-a695d63d2e2c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 99.6261 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "BEMFB"
-		(shape input)
+		(label "BEMFB"
 		(at 82.55 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5451,23 +5155,9 @@
 			(justify left)
 		)
 		(uuid "81da6b0f-da57-4b43-8c32-51538ef03414")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7642 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "BLOW"
-		(shape input)
+		(label "BLOW"
 		(at 46.99 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5475,23 +5165,9 @@
 			(justify right)
 		)
 		(uuid "85d4d711-d286-4e24-b8f9-2669759e0704")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.9248 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BEMFB"
-		(shape input)
+		(label "BEMFB"
 		(at 237.49 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5499,23 +5175,9 @@
 			(justify right)
 		)
 		(uuid "978f5318-6552-441b-80b6-990a80daf822")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.2758 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORC"
-		(shape input)
+		(label "MOTORC"
 		(at 227.33 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5523,23 +5185,9 @@
 			(justify left)
 		)
 		(uuid "99fa06c5-aaaf-4bd4-8374-bf642d701f4d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.9352 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GLC"
-		(shape input)
+		(label "GLC"
 		(at 161.29 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5547,23 +5195,9 @@
 			(justify right)
 		)
 		(uuid "9c2f67e2-2209-4e1c-8ce5-6b9186b50ef0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.7367 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORB"
-		(shape input)
+		(label "MOTORB"
 		(at 138.43 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5571,23 +5205,9 @@
 			(justify left)
 		)
 		(uuid "a0e577b8-5da3-4535-9b40-ffc49ea7f4e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 149.0352 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "SWDIO"
-		(shape input)
+		(label "SWDIO"
 		(at 238.76 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5595,23 +5215,9 @@
 			(justify right)
 		)
 		(uuid "a6bc2f88-1822-46b3-9a36-7d309671b717")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.9086 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "CLOW"
-		(shape input)
+		(label "CLOW"
 		(at 46.99 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5619,23 +5225,9 @@
 			(justify right)
 		)
 		(uuid "ac51259d-6680-48cb-9eb1-e361c6f6652c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.9248 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ALOW"
-		(shape input)
+		(label "ALOW"
 		(at 46.99 68.58 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5643,23 +5235,9 @@
 			(justify right)
 		)
 		(uuid "adbfb44c-5e12-42f3-98cb-0558f234906b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.1062 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "SWDCLK"
-		(shape input)
+		(label "SWDCLK"
 		(at 82.55 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5667,23 +5245,9 @@
 			(justify left)
 		)
 		(uuid "b78b75d4-49d0-4894-9050-ab05498eccae")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.0342 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "BEMF_COMMON"
-		(shape input)
+		(label "BEMF_COMMON"
 		(at 238.76 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5691,23 +5255,9 @@
 			(justify left)
 		)
 		(uuid "bad03b0c-03d5-4e21-b154-edb8936a3c2c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.8361 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GHC"
-		(shape input)
+		(label "GHC"
 		(at 161.29 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5715,23 +5265,9 @@
 			(justify right)
 		)
 		(uuid "bbef5bfd-6579-4d71-b89c-6eb04ce8c9e2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.4343 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BEMFA"
-		(shape input)
+		(label "BEMFA"
 		(at 82.55 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5739,23 +5275,9 @@
 			(justify left)
 		)
 		(uuid "c79aea9f-bfff-4322-b0bb-980b46733c92")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.5828 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "ALOW"
-		(shape input)
+		(label "ALOW"
 		(at 157.48 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5763,23 +5285,9 @@
 			(justify left)
 		)
 		(uuid "cb0b621b-dda9-4f6c-9e00-f2b06715ca78")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.3638 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "SWDIO"
-		(shape input)
+		(label "SWDIO"
 		(at 82.55 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5787,23 +5295,9 @@
 			(justify left)
 		)
 		(uuid "cce2fc1a-60f3-4915-b79f-541b220ddb34")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.4014 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GLB"
-		(shape input)
+		(label "GLB"
 		(at 157.48 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5811,23 +5305,9 @@
 			(justify left)
 		)
 		(uuid "d3f1b3f7-7d94-413f-8ae9-ac50fdae54a1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.0333 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "AHIGH"
-		(shape input)
+		(label "AHIGH"
 		(at 130.81 44.45 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5835,23 +5315,9 @@
 			(justify right)
 		)
 		(uuid "dbf79350-59a0-44cf-9cc5-426cf74455e8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.2004 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BHIGH"
-		(shape input)
+		(label "BHIGH"
 		(at 130.81 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5859,23 +5325,9 @@
 			(justify right)
 		)
 		(uuid "dd839e32-56de-4e88-b359-316f072ed0a2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.019 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BEMFC"
-		(shape input)
+		(label "BEMFC"
 		(at 214.63 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5883,23 +5335,9 @@
 			(justify right)
 		)
 		(uuid "de8b6114-566e-42b6-b510-0c36506f18e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.4158 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BEMFA"
-		(shape input)
+		(label "BEMFA"
 		(at 262.89 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5907,23 +5345,9 @@
 			(justify right)
 		)
 		(uuid "dee6a2c2-ba0a-4ae8-bcf6-a99bdeeae824")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 253.8572 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "BEMFC"
-		(shape input)
+		(label "BEMFC"
 		(at 82.55 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5931,23 +5355,9 @@
 			(justify left)
 		)
 		(uuid "e70b9150-776c-4159-a3a0-309e9a79d809")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7642 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GLB"
-		(shape input)
+		(label "GLB"
 		(at 107.95 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5955,23 +5365,9 @@
 			(justify right)
 		)
 		(uuid "ee694a74-30f4-45f8-a182-e2d16f1ae88f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.3967 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORC"
-		(shape input)
+		(label "MOTORC"
 		(at 182.88 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5979,23 +5375,9 @@
 			(justify left)
 		)
 		(uuid "f4668ffa-f6ca-482e-82f2-64732b9da11c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.4852 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "SWDCLK"
-		(shape input)
+		(label "SWDCLK"
 		(at 238.76 120.65 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6003,23 +5385,9 @@
 			(justify right)
 		)
 		(uuid "f5a26ad4-50dd-4203-9eb5-f03a5a0624af")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.2758 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "MOTORB"
-		(shape input)
+		(label "MOTORB"
 		(at 250.19 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6027,23 +5395,9 @@
 			(justify left)
 		)
 		(uuid "fb01405f-8f68-49f6-ac06-5327c4c67d3d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.7952 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GHC"
-		(shape input)
+		(label "GHC"
 		(at 130.81 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6051,23 +5405,9 @@
 			(justify right)
 		)
 		(uuid "fc1825f5-3eb4-40f2-b592-bb4b9e8a29a7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.9543 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "GLC"
-		(shape input)
+		(label "GLC"
 		(at 157.48 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6075,23 +5415,9 @@
 			(justify left)
 		)
 		(uuid "fca9fb62-e2fe-4341-85e2-8dd7c98eb911")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.0333 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
-	(global_label "GHA"
-		(shape input)
+		(label "GHA"
 		(at 130.81 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6099,18 +5425,6 @@
 			(justify right)
 		)
 		(uuid "ffdd7391-f7eb-4ffe-baec-ad4f8889e9ff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.1357 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(hierarchical_label "TELEMETRY"
 		(shape output)
