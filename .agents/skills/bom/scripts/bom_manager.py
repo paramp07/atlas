@@ -374,7 +374,9 @@ def generate_bom(symbols: list[dict], convention: dict,
         def get_canonical(canonical_name: str) -> str:
             actual_name = field_map.get(canonical_name)
             if actual_name:
-                return props.get(actual_name, "").strip()
+                val = props.get(actual_name, "").strip()
+                if val:
+                    return val
             # Try all known aliases as fallback
             for alias in FIELD_ALIASES.get(canonical_name, []):
                 val = props.get(alias, "").strip()

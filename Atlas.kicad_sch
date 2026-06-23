@@ -1604,7 +1604,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U101"
+			(property "Reference" "U103"
 				(at -2.032 12.446 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1614,7 +1614,7 @@
 					)
 				)
 			)
-			(property "Value" "INA186A2QDBVRQ1"
+			(property "Value" "INA186A2"
 				(at -2.032 9.906 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1624,7 +1624,7 @@
 					)
 				)
 			)
-			(property "Footprint" "4in1ESC:SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR"
+			(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-23-5"
 				(at 1.27 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1705,10 +1705,10 @@
 				)
 			)
 			(symbol "INA186A2QDBVRQ1_1_1"
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name ""
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1723,10 +1723,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "GND"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3184,7 +3184,7 @@
 	)
 	(text "FC CONNECTOR"
 		(exclude_from_sim no)
-		(at 153.67 151.384 0)
+		(at 152.4 142.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3540,7 +3540,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 175.26) (xy 156.21 175.26)
+			(xy 149.86 166.37) (xy 154.94 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3600,7 +3600,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 158.75) (xy 151.13 160.02)
+			(xy 149.86 149.86) (xy 149.86 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3610,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 165.1) (xy 156.21 165.1)
+			(xy 149.86 156.21) (xy 154.94 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3790,7 +3790,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 172.72) (xy 156.21 172.72)
+			(xy 149.86 163.83) (xy 154.94 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3840,7 +3840,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 170.18) (xy 156.21 170.18)
+			(xy 149.86 161.29) (xy 154.94 161.29)
 		)
 		(stroke
 			(width 0)
@@ -4040,7 +4040,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 162.56) (xy 153.67 182.88)
+			(xy 152.4 153.67) (xy 152.4 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4080,7 +4080,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 177.8) (xy 156.21 177.8)
+			(xy 149.86 168.91) (xy 154.94 168.91)
 		)
 		(stroke
 			(width 0)
@@ -4120,7 +4120,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 160.02) (xy 156.21 160.02)
+			(xy 149.86 151.13) (xy 154.94 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4610,7 +4610,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 167.64) (xy 156.21 167.64)
+			(xy 149.86 158.75) (xy 154.94 158.75)
 		)
 		(stroke
 			(width 0)
@@ -4690,7 +4690,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 162.56) (xy 153.67 162.56)
+			(xy 154.94 153.67) (xy 152.4 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5010,7 +5010,7 @@
 	)
 	(global_label "M1"
 		(shape input)
-		(at 151.13 170.18 180)
+		(at 149.86 161.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5020,7 +5020,7 @@
 		)
 		(uuid "09bc8fa4-4749-4102-bf84-7fcdbdf23387")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.4839 170.18 0)
+			(at 144.2139 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5082,7 +5082,7 @@
 	)
 	(global_label "M3"
 		(shape input)
-		(at 151.13 175.26 180)
+		(at 149.86 166.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5092,7 +5092,7 @@
 		)
 		(uuid "5aa18a93-58da-4efe-bd7b-8e83d3cda228")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.4839 175.26 0)
+			(at 144.2139 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5130,7 +5130,7 @@
 	)
 	(global_label "CURRENT"
 		(shape input)
-		(at 151.13 165.1 180)
+		(at 149.86 156.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5140,7 +5140,7 @@
 		)
 		(uuid "5d3a1c4f-b9b3-4c72-b99d-ffcdd3f1a461")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.5572 165.1 0)
+			(at 138.2872 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5226,7 +5226,7 @@
 	)
 	(global_label "M4"
 		(shape input)
-		(at 151.13 177.8 180)
+		(at 149.86 168.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5236,7 +5236,7 @@
 		)
 		(uuid "855c9b6b-fa3f-4443-9755-338db232f7ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.4839 177.8 0)
+			(at 144.2139 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5274,7 +5274,7 @@
 	)
 	(global_label "TELEMETRY"
 		(shape input)
-		(at 151.13 167.64 180)
+		(at 149.86 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5284,7 +5284,7 @@
 		)
 		(uuid "94926fbc-e70f-4afb-b4b1-9a055c6a7bc7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.9245 167.64 0)
+			(at 136.6545 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,7 +5298,7 @@
 	)
 	(global_label "M2"
 		(shape input)
-		(at 151.13 172.72 180)
+		(at 149.86 163.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5308,7 +5308,7 @@
 		)
 		(uuid "950a35b7-6e40-4b37-9c51-f749abff9ebd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 145.4839 172.72 0)
+			(at 144.2139 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5600,7 +5600,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 182.88 0)
+		(at 160.02 173.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5611,7 +5611,7 @@
 		(fields_autoplaced yes)
 		(uuid "06bcdb97-7ea1-4a4c-ae46-efa1b24e5229")
 		(property "Reference" "#PWR0121"
-			(at 161.29 189.23 0)
+			(at 160.02 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5622,7 +5622,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.29 187.96 0)
+			(at 160.02 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5632,7 +5632,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 182.88 0)
+			(at 160.02 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5643,7 +5643,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 182.88 0)
+			(at 160.02 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5654,7 +5654,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 182.88 0)
+			(at 160.02 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5754,7 +5754,7 @@
 				)
 			)
 		)
-		(property "MPN" "HOLR2725D-4W-0.2MR-1%"
+		(property "MPN" ""
 			(at 167.64 -60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7422,7 +7422,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 153.67 182.88 0)
+		(at 152.4 173.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7433,7 +7433,7 @@
 		(fields_autoplaced yes)
 		(uuid "483d67d0-4b0e-4af1-b566-6630c0a1797e")
 		(property "Reference" "#PWR0120"
-			(at 153.67 189.23 0)
+			(at 152.4 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7444,7 +7444,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 187.96 0)
+			(at 152.4 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7454,7 +7454,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 182.88 0)
+			(at 152.4 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7465,7 +7465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 182.88 0)
+			(at 152.4 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7476,7 +7476,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 182.88 0)
+			(at 152.4 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7519,7 +7519,7 @@
 				)
 			)
 		)
-		(property "Value" "SMF24A_C19077514"
+		(property "Value" "SMF24A"
 			(at 145.288 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7593,14 +7593,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "lcsc" "C19077514" (at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8469,7 +8461,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 151.13 158.75 0)
+		(at 149.86 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8480,7 +8472,7 @@
 		(fields_autoplaced yes)
 		(uuid "676fabfe-b86f-479f-b095-5af25617be0b")
 		(property "Reference" "#PWR0119"
-			(at 151.13 162.56 0)
+			(at 149.86 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8491,7 +8483,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 151.13 153.67 0)
+			(at 149.86 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8501,7 +8493,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 158.75 0)
+			(at 149.86 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8512,7 +8504,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 158.75 0)
+			(at 149.86 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8523,7 +8515,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 151.13 158.75 0)
+			(at 149.86 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8576,7 +8568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "4in1ESC:SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR"
+		(property "Footprint" "easyeda2kicad:SOT-23-5_L2.9-W1.6-P0.94-LS2.8-BL"
 			(at 241.3 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -9479,7 +9471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:IND-SMD_L7.1-W6.6"
+		(property "Footprint" "Inductor_SMD:L_KOHERelec_MDA7030"
 			(at 67.31 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -10460,7 +10452,7 @@
 				)
 			)
 		)
-		(property "Value" "SMF24A_C19077514"
+		(property "Value" "SMF24A"
 			(at 145.288 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10470,7 +10462,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOD-123FL_L2.7-W1.8-LS3.8-RD"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 146.05 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -10534,14 +10526,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "lcsc" "C19077514" (at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11326,7 +11310,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x08_MountingPin")
-		(at 161.29 167.64 0)
+		(at 160.02 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11337,7 +11321,7 @@
 		(fields_autoplaced yes)
 		(uuid "b62768c5-b2e2-4a73-a4b4-eaaa94b792c9")
 		(property "Reference" "J101"
-			(at 163.83 167.9955 0)
+			(at 162.56 159.1055 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11348,7 +11332,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_MountingPin"
-			(at 163.83 170.5355 0)
+			(at 162.56 161.6455 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11359,7 +11343,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_SM08B-SRSS-TB_1x08-1MP_P1.00mm_Horizontal"
-			(at 161.29 167.64 0)
+			(at 160.02 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11369,8 +11353,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/2304141430_JST-SM08B-SRSS-TB-LF-SN_C160401.pdf"
-			(at 161.29 167.64 0)
+		(property "Datasheet" ""
+			(at 160.02 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11381,7 +11365,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 161.29 167.64 0)
+			(at 160.02 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11389,30 +11373,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "lcsc" "C160401" (at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "JST" (at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SM08B-SRSS-TB(LF)(SN)" (at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "8"
